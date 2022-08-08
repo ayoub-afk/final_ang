@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "store-77ccc": {
+      "hosting": {
+        "final_angular": [
+          "store-77ccc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "store-77ccc"
+  }
+}
