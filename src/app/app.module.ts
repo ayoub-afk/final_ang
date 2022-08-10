@@ -14,6 +14,22 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule}  from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { ProductCardComponent } from './pages/products-pages/product-card/product-card.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogLogInComponent } from './dialog-login/dialog-login.component';
+
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +40,10 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     LoginPageComponent,
     RegisterPageComponent,
     CartPageComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    NavBarComponent,
+    ProductCardComponent,
+    DialogLogInComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +51,16 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage()),
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatDialogModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

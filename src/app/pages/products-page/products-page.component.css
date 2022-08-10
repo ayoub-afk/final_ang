@@ -1,0 +1,9 @@
+mat-grid-tile {
+/*   background: lightblue;
+ */  overflow: auto;
+}
+mat-grid-list
+{
+  margin: 5vh 10vw;
+  width: 80vw;
+}
